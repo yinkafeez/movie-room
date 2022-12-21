@@ -30,10 +30,10 @@ function App() {
             { movies.length > 0 
                ?(
                     <div className="movie-container">
-                        <Row>
+                        <Row className="movie-row">
                             {movies.map(movie => {
                             return(
-                                <Col xs={12} md={4} lg={3} key={movie.imdbID}>
+                                <Col className="movie-col" xs={12} sm={6} md={4} lg={3} key={movie.imdbID}>
                                     <Movie  movie={movie} />
                                 </Col>
                             )
